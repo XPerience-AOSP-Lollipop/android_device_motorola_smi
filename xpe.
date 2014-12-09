@@ -1,0 +1,47 @@
+[
+ {
+  "repository": "Cyanogenmod/android_hardware_intel_img_psb_video",
+  "taret_path": "hardware/intel/img/psb_video",
+  "revision":   "stagin/cm-12.0"
+  },
+  {
+  "repository": "Cyanogenmod/android_hardware_intel_img_libdrm",
+  "taret_path": "hardware/intel/img/libdrm",
+  "revision":   "stagin/cm-12.0"
+  },
+  "repository": "Cyanogenmod/android_hardware_intel_img_psb_headers",
+  "taret_path": "hardware/intel/img/psb_headers",
+  "revision":   "stagin/cm-12.0"
+  },
+  {
+  "repository": "Cyanogenmod/android_hardware_intel_common_omx-components",
+  "taret_path": "hardware/intel/common/omx-components",
+  "revision":   "stagin/cm-12.0"
+  },
+  {
+  "repository": "Cyanogenmod/android_hardware_intel_common_wrs_omxil_core",
+  "taret_path": "hardware/intel/common/wrs_omxil_core",
+  "revision":   "stagin/cm-12.0"
+  },
+{
+  "repository": "Cyanogenmod/android_hardware_intel_common_libstagefrighthw",
+  "taret_path": "hardware/intel/common/libstagefrighthw",
+  "revision":   "stagin/cm-12.0"
+  },
+{
+  "repository": "Cyanogenmod/android_hardware_intel_common_libva",
+  "taret_path": "hardware/intel/common/libva",
+  "revision":   "stagin/cm-12.0"
+  },
+{
+  "repository": "Cyanogenmod/android_hardware_intel_common_libmix",
+  "taret_path": "hardware/intel/common/libmix",
+  "revision":   "stagin/cm-12.0"
+  },
+{
+  "repository": "Cyanogenmod/android_hardware_intel_audio_media",
+  "taret_path": "hardware/intel/audio/media",
+  "revision":   "stagin/cm-12.0"
+  }
+  
+]
