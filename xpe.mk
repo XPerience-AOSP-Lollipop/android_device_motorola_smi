@@ -1,8 +1,8 @@
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/XPe/config/common_full_phone.mk)
 
 # Inherit enhanced nfc config 
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/XPe/config/nfc_enhanced.mk)
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
@@ -11,7 +11,7 @@ TARGET_SCREEN_WIDTH := 540
 
 # Release name
 PRODUCT_RELEASE_NAME := Razr I
-PRODUCT_NAME := cm_smi
+PRODUCT_NAME := xpe_smi
 
 # Inherit from smi device
 $(call inherit-product, device/motorola/smi/full_smi.mk)
