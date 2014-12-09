@@ -9,6 +9,7 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_BOOTLOADER_BOARD_NAME := smi
 TARGET_CPU_ABI := x86
 TARGET_CPU_VARIANT := x86
+#TARGET_CPU_ABI2 := x86
 TARGET_CPU_ABI2 := armeabi-v7a
 TARGET_ARCH := x86
 TARGET_ARCH_VARIANT := x86-atom
@@ -157,3 +158,12 @@ BOARD_SEPOLICY_UNION += \
     domain.te \
     init_shell.te \
     netd.te
+
+#Turn on GR Statick flag in skia to boost performance
+TARGET_USE_STATIC_RECT_VB := true
+
+# Skip droiddoc build to save build time
+#BOARD_SKIP_ANDROID_DOC_BUILD := true
+
+# customize the malloced address to be 16-byte aligned
+BOARD_MALLOC_ALIGNMENT := 16
