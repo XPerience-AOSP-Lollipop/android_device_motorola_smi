@@ -1,9 +1,6 @@
 # Sensor
 bin/akmd8963
 
-# Batt Health app, source available
-bin/batt_health
-
 # Bluetooth, gps, fm
 bin/bd_prov
 bin/uim
@@ -15,7 +12,6 @@ lib/libtinyalsa.so
 etc/firmware/vpimg_es305b-BB.bin
 etc/firmware/vpimg_es305b-NH.bin
 etc/firmware/vpimg_es305b.bin
-etc/media_codecs.xml
 etc/parameter-framework/ParameterFrameworkConfiguration.xml
 etc/parameter-framework/Settings/Audio/AudioConfigurableDomains.xml
 etc/parameter-framework/Structure/Audio/AudienceSubsystem.xml
@@ -98,97 +94,53 @@ lib/libarcomx_qcelpdec_sharedlibrary.so
 lib/libarcomx_qcelpenc_sharedlibrary.so
 lib/libarcomx_wmadec_sharedlibrary.so
 lib/libarcplatform.so
-lib/libmixvbp.so
 lib/libmixvbp_h264.so
 lib/libmixvbp_mpeg4.so
+lib/libmixvbp.so
 lib/libmixvbp_vc1.so
-lib/libOMXVideoDecoderAVC.so
-lib/libOMXVideoDecoderAVCSecure.so
-lib/libOMXVideoDecoderH263.so
-lib/libOMXVideoDecoderMPEG4.so
-lib/libOMXVideoDecoderPAVC.so
-lib/libOMXVideoDecoderWMV.so
 lib/libOMXVideoEncoderAVC.so
 lib/libOMXVideoEncoderH263.so
 lib/libOMXVideoEncoderMPEG4.so
 lib/libremote-processor.so
 lib/libstagefrighthw.so
-lib/libva_videodecoder.so
 lib/libva_videoencoder.so
-lib/libwrs_omxil_common.so
-lib/libwrs_omxil_core_pvwrapped.so
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
 
 # Graphics
-bin/msvdx_bin
-bin/topaz_bin
 etc/firmware/mp3_dec_1.bin
 etc/firmware/msvdx_fw_mfld_DE2.0.bin
 etc/firmware/topazsc_fw.bin
 etc/firmware/wma9_dec_1.bin
 lib/drm/libmotdrmplugin.so
 lib/hw/hwcomposer.smi.so
-lib/libdrm.so
 lib/libpvr2d.so
 lib/libsepdrm.so
-lib/libsrv_um.so
-lib/libva-android.so
-lib/libva-tpi.so
-lib/libva.so
 lib/libwbxmlparser.so
-lib/libwsbm.so
 lib/pvr_drv_video.so
 vendor/bin/pvrsrvctl
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/egl/libEGL_POWERVR_SGX540_121.so
-vendor/lib/egl/libEGL_POWERVR_SGX540_121.so.1
-vendor/lib/egl/libEGL_POWERVR_SGX540_121.so.1.12.2984607
 vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_121.so
-vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_121.so.1
-vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_121.so.1.12.2984607
 vendor/lib/egl/libGLESv2_POWERVR_SGX540_121.so
-vendor/lib/egl/libGLESv2_POWERVR_SGX540_121.so.1
-vendor/lib/egl/libGLESv2_POWERVR_SGX540_121.so.1.12.2984607
 vendor/lib/hw/gralloc.smi.so
-vendor/lib/hw/gralloc.smi.so.1
-vendor/lib/hw/gralloc.smi.so.1.12.2984607
 vendor/lib/hw/memtrack.smi.so
-vendor/lib/hw/memtrack.smi.so.1
-vendor/lib/hw/memtrack.smi.so.1.12.2984607
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libglslcompiler.so
-vendor/lib/libglslcompiler.so.1
-vendor/lib/libglslcompiler.so.1.12.2984607
 vendor/lib/libIMGegl.so
-vendor/lib/libIMGegl.so.1
-vendor/lib/libIMGegl.so.1.12.2984607
 vendor/lib/libpvr2d.so
-vendor/lib/libpvr2d.so.1
-vendor/lib/libpvr2d.so.1.12.2984607
 vendor/lib/libpvrANDROID_WSEGL.so
-vendor/lib/libpvrANDROID_WSEGL.so.1
-vendor/lib/libpvrANDROID_WSEGL.so.1.12.2984607
 vendor/lib/libPVRScopeServices.so
-vendor/lib/libPVRScopeServices.so.1
-vendor/lib/libPVRScopeServices.so.1.12.2984607
 vendor/lib/libsrv_init.so
-vendor/lib/libsrv_init.so.1
-vendor/lib/libsrv_init.so.1.12.2984607
 vendor/lib/libsrv_um.so
-vendor/lib/libsrv_um.so.1
-vendor/lib/libsrv_um.so.1.12.2984607
 vendor/lib/libusc.so
-vendor/lib/libusc.so.1
-vendor/lib/libusc.so.1.12.2984607
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Camera
-lib/hw/camera.sc1.so
-lib/libintelmetadatabuffer.so
+lib/hw/camera.sc1.so:lib/hw/camera.vendor.sc1.so
 lib/libmfldadvci.so
 lib/libSh3aParamsLiteOn8M.so
 lib/libSh3aParamsSemcoLc898211.so
@@ -234,17 +186,13 @@ etc/rril/repository.txt
 etc/telephony/mmgr.conf
 lib/libglib-2.0.so
 lib/libmmgrcli.so
-lib/libpn544_fw.so
+lib/libpn544_fw.so:lib/libpn544_fw.bak
 lib/librapid-ril-core.so
 lib/librapid-ril-util.so
 lib/libsecurity_api.so
 
 # FS
 lib/parameter-framework-plugins/Fs/libfs-subsystem.so
-
-# NFC
-etc/nfcee_access.xml
-lib/hw/nfc.smi.so
 
 # HW
 lib/hw/lights.mrst.so:lib/hw/lights.smi.so
@@ -298,9 +246,13 @@ etc/firmware/isp_acc_warping.bin
 etc/firmware/shisp.bin
 
 # Misc, source available
-bin/charge_only_mode
-bin/mot_boot_mode
 etc/firmware/fa_extension.bin
 
-# Viedeoeditor
+# Charger (from source doesn't boot)
+bin/charge_only_mode
+
+# Battery Health
+bin/batt_health
+
+# Videoeditor
 lib/libI420colorconvert.so

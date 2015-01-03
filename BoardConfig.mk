@@ -23,7 +23,7 @@ TARGET_CPU_SMP := true
 # Connectivity - Wi-Fi
 USES_TI_MAC80211 := true
 
-WPA_SUPPLICANT_VERSION := VER_0_8_X
+WPA_SUPPLICANT_VERSION := VER_0_8_X_TI
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wl12xx
 BOARD_WLAN_DEVICE := wl12xx_mac80211
@@ -61,10 +61,12 @@ BOARD_KERNEL_BASE := 0x1200000
 BOARD_KERNEL_BASE := 0x000400
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/boottools/image/bzImage
-TARGET_KERNEL_CONFIG := i386_mfld_oxavelar_defconfig
-#TARGET_KERNEL_SOURCE := linux-3.0.34
+TARGET_KERNEL_CONFIG := i386_mfld_test_defconfig
+#TARGET_KERNEL_SOURCE := linux/kernel
 BOARD_KERNEL_IMAGE_NAME := bzImage
-BOARD_KERNEL_CMDLINE := init=/init pci=noearly console=logk0 vmalloc=260046848 earlyprintk=nologger hsu_dma=7 kmemleak=off androidboot.bootmedia=sdcard androidboot.hardware=sc1 emmc_ipanic.ipanic_part_number=6 loglevel=4 console=null androidboot.mode=main androidboot.wakesrc=0x00004000 androidboot.bootloader=0x2025 cid=0x7 androidboot.serialno=TA23703D03 androidboot.baseband=xmm androidboot.carrier=
+BOARD_KERNEL_CMDLINE := init=/init pci=noearly console=logk0 vmalloc=260046848 earlyprintk=nologger \
+                        hsu_dma=7 kmemleak=off androidboot.bootmedia=sdcard androidboot.hardware=sc1 \
+                        emmc_ipanic.ipanic_part_number=6 slub_max_order=2 loglevel=4
 
 # Storage information
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
@@ -105,16 +107,12 @@ BOARD_ALLOW_EGL_HIBERNATION := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
-#ENABLE_IMG_GRAPHICS := true
+ENABLE_IMG_GRAPHICS := true
 BUILD_WITH_FULL_STAGEFRIGHT := true
-#INTEL_VA := true
-#BOARD_USES_VIDEO := true
-#BOARD_USES_WRS_OMXIL_CORE := true
-#BOARD_USES_MRST_OMX := true
-#USE_INTEL_SECURE_AVC := true
-#ENABLE_MRFL_GRAPHICS := true
-#USE_HW_VP8 := true
-INTEL_VIDEO_XPROC_SHARING := true
+INTEL_VA := true
+BOARD_USES_WRS_OMXIL_CORE := true
+BOARD_USES_MRST_OMX := true
+USE_INTEL_SECURE_AVC := true
 
 # Enable WEBGL in WebKit
 ENABLE_WEBGL := true
@@ -134,7 +132,7 @@ TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/rootdir/init.recovery.sc1.rc
 BOARD_RECOVERY_SWIPE := true
 BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/boottools/image/bzImage
-
+BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Recovery options TWRP
 DEVICE_RESOLUTION := 540x960
