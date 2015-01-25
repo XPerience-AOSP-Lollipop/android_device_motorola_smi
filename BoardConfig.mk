@@ -164,3 +164,7 @@ TARGET_USE_STATIC_RECT_VB := true
 
 # customize the malloced address to be 16-byte aligned
 BOARD_MALLOC_ALIGNMENT := 16
+
+#Test later
+## Needed for blobs 4.2+
+#COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
